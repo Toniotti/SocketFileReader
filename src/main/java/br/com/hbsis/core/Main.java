@@ -10,7 +10,7 @@ public class Main {
         ServerSocket serverSocket = new ServerSocket(5501);
             while (true) {
                 Socket socket = serverSocket.accept();
-                String fileLocation = "C:\\Users\\matheus.toniotti\\Documents\\teste\\log_" + UUID.randomUUID() + ".txt";
+                String fileLocation = "/home/logFiles/log_" + UUID.randomUUID() + ".txt";
                 File file = new File(fileLocation);
                 file.createNewFile();
                 byte[] bytes = new byte[16 * 1024];
