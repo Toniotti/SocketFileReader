@@ -10,16 +10,12 @@ public class Main {
         ServerSocket serverSocket = new ServerSocket(5501);
             while (true) {
                 Socket socket = serverSocket.accept();
-                String fileLocation = "/home/logFiles/log_" + UUID.randomUUID() + ".txt";
+                String fileLocation = "C:\\Users\\matheus.toniotti\\Documents\\teste\\log_" + UUID.randomUUID() + ".txt";
                 File file = new File(fileLocation);
                 file.createNewFile();
                 byte[] bytes = new byte[16 * 1024];
-                try (OutputStream out = new FileOutputStream(file); InputStream in = socket.getInputStream()) {
-                    int count;
-                    while ((count = in.read(bytes)) > 0) {
-                        System.out.println("writing: "+bytes.toString());
-                        out.write(bytes, 0, count);
-                    }
+                try (BufferedWriter bw = new BufferedWriter(new FileWriter(file)); InputStream in = socket.getInputStream()) {
+                    bw.write(new String(bytes));
                 } catch (Exception e) {
                     continue;
                 }
