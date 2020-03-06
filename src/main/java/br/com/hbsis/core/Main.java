@@ -7,11 +7,11 @@ import java.util.UUID;
 
 public class Main {
     public static void main(String[] args) throws IOException {
+        ServerSocket serverSocket = new ServerSocket(5501);
         try {
-            ServerSocket serverSocket = new ServerSocket(5501);
             while (true) {
-                String fileLocation = "/home/logs/log" + UUID.randomUUID() + ".txt";
                 Socket socket = serverSocket.accept();
+                String fileLocation = "/home/logFiles/log_" + UUID.randomUUID() + ".txt";
                 File file = new File(fileLocation);
                 file.createNewFile();
                 byte[] bytes = new byte[16 * 1024];
@@ -21,11 +21,10 @@ public class Main {
                         out.write(bytes, 0, count);
                     }
                 } catch (Exception e) {
-                    e.printStackTrace();
+
                 }
             }
         } catch (IOException e) {
-            e.printStackTrace();
         }
     }
 }
