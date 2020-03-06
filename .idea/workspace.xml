@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2853a292-599b-4d6f-8e28-972b1a851f52" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/hbsis/core/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +50,7 @@
     <configuration name="SocketReader" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="Main" />
+      <option name="MAIN_CLASS_NAME" value="br.com.hbsis.core.Main" />
       <module name="SocketFileReader" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -79,7 +82,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583517953348</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="adicionando configuração de build do maven">
+      <created>1583518120441</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1583518120441</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -100,17 +110,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="627" y="262" key="#com.intellij.ide.util.TreeClassChooserDialog/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1583517755758" />
-    <state x="527" y="47" key="CommitChangelistDialog2" timestamp="1583517952771">
+    <state x="527" y="47" key="CommitChangelistDialog2" timestamp="1583518119978">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="527" y="47" key="CommitChangelistDialog2/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1583517952771" />
-    <state x="452" y="188" key="Vcs.Push.Dialog.v2" timestamp="1583517956243">
+    <state x="527" y="47" key="CommitChangelistDialog2/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1583518119978" />
+    <state x="452" y="188" key="Vcs.Push.Dialog.v2" timestamp="1583518123826">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="452" y="188" key="Vcs.Push.Dialog.v2/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1583517956243" />
-    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1583517954899">
+    <state x="452" y="188" key="Vcs.Push.Dialog.v2/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1583518123826" />
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1583518122580">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1583517954899" />
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1583518122580" />
   </component>
 </project>

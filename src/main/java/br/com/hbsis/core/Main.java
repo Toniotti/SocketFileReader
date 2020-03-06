@@ -1,3 +1,5 @@
+package br.com.hbsis.core;
+
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;

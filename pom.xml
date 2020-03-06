@@ -22,7 +22,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>com.mkyong.core.App</mainClass>
+                            <mainClass>br.com.hbsis.core.Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
