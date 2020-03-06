@@ -1,12 +1,13 @@
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.UUID;
 
 public class Main {
     public static void main(String[] args) throws IOException {
         ServerSocket serverSocket = new ServerSocket(5501);
-        String fileLocation = "/home/files/log.txt";
         while (true) {
+            String fileLocation = "/home/logs/log"+ UUID.randomUUID() +".txt";
             Socket socket = serverSocket.accept();
             File file = new File(fileLocation);
             file.createNewFile();
