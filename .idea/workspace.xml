@@ -107,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583521959126</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="reiniciar a socket">
+      <created>1583522101607</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1583522101607</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -115,7 +122,8 @@
     <MESSAGE value="adicionando configuração de build do maven" />
     <MESSAGE value="ééééé" />
     <MESSAGE value="mudando diretorio do log" />
-    <option name="LAST_COMMIT_MESSAGE" value="mudando diretorio do log" />
+    <MESSAGE value="reiniciar a socket" />
+    <option name="LAST_COMMIT_MESSAGE" value="reiniciar a socket" />
   </component>
   <component name="WindowStateProjectService">
     <state x="452" y="95" key="#Project_Structure" timestamp="1583516690235">
@@ -130,10 +138,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="627" y="262" key="#com.intellij.ide.util.TreeClassChooserDialog/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1583517755758" />
-    <state x="527" y="47" key="CommitChangelistDialog2" timestamp="1583521958585">
+    <state x="527" y="47" key="CommitChangelistDialog2" timestamp="1583522101064">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="527" y="47" key="CommitChangelistDialog2/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1583521958585" />
+    <state x="527" y="47" key="CommitChangelistDialog2/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1583522101064" />
     <state width="1865" height="259" key="GridCell.Tab.0.bottom" timestamp="1583521287302">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -150,13 +158,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1865" height="259" key="GridCell.Tab.0.right/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1583521287302" />
-    <state x="452" y="188" key="Vcs.Push.Dialog.v2" timestamp="1583521961822">
+    <state x="452" y="188" key="Vcs.Push.Dialog.v2" timestamp="1583522112787">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="452" y="188" key="Vcs.Push.Dialog.v2/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1583521961822" />
-    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1583521959891">
+    <state x="452" y="188" key="Vcs.Push.Dialog.v2/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1583522112787" />
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1583522110777">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1583521959891" />
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1583522110777" />
   </component>
 </project>

@@ -7,7 +7,6 @@ import java.util.UUID;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        try {
             while (true) {
                 ServerSocket serverSocket = new ServerSocket(5501);
                 Socket socket = serverSocket.accept();
@@ -21,10 +20,8 @@ public class Main {
                         out.write(bytes, 0, count);
                     }
                 } catch (Exception e) {
-
+                    continue;
                 }
             }
-        } catch (IOException e) {
-        }
     }
 }
