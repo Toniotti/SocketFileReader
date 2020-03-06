@@ -7,9 +7,9 @@ import java.util.UUID;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        ServerSocket serverSocket = new ServerSocket(5501);
         try {
             while (true) {
+                ServerSocket serverSocket = new ServerSocket(5501);
                 Socket socket = serverSocket.accept();
                 String fileLocation = "/home/logFiles/log_" + UUID.randomUUID() + ".txt";
                 File file = new File(fileLocation);
