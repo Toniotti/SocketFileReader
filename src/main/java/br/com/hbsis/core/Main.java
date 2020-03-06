@@ -17,6 +17,7 @@ public class Main {
                 try (OutputStream out = new FileOutputStream(file); InputStream in = socket.getInputStream()) {
                     int count;
                     while ((count = in.read(bytes)) > 0) {
+                        System.out.println("writing: "+bytes.toString());
                         out.write(bytes, 0, count);
                     }
                 } catch (Exception e) {
