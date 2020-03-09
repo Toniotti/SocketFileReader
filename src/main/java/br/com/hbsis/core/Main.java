@@ -18,7 +18,6 @@ public class Main {
                 new Thread(() -> {
                     numberThread++;
                     receive(socket);
-                    numberThread--;
                 }).start();
                 System.out.println(numberThread);
             }
@@ -41,6 +40,8 @@ public class Main {
                 out.write(bytes, 0, count);
             }
         } catch (Exception e) {
+        } finally {
+            numberThread--;
         }
     }
 }
