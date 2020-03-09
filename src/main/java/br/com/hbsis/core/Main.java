@@ -13,8 +13,8 @@ public class Main {
     public static void main(String[] args) throws IOException {
         ServerSocket serverSocket = new ServerSocket(serverPort);
         while (true) {
+            Socket socket = serverSocket.accept();
             if (numberThread < 5) {
-                Socket socket = serverSocket.accept();
                 new Thread(() -> {
                     numberThread++;
                     receive(socket);
@@ -40,6 +40,7 @@ public class Main {
                 out.write(bytes, 0, count);
             }
         } catch (Exception e) {
+            e.printStackTrace();
         } finally {
             numberThread--;
         }
