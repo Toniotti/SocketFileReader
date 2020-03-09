@@ -20,6 +20,7 @@ public class Main {
                     receive(socket);
                     numberThread--;
                 }).start();
+                System.out.println(numberThread);
             }
             continue;
         }
