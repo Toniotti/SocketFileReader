@@ -14,14 +14,9 @@ public class Main {
         ServerSocket serverSocket = new ServerSocket(serverPort);
         while (true) {
             Socket socket = serverSocket.accept();
-            if (numberThread < 5) {
-                new Thread(() -> {
-                    numberThread++;
-                    receive(socket);
-                }).start();
-                System.out.println(numberThread);
-            }
-            continue;
+            new Thread(() -> {
+                receive(socket);
+            }).start();
         }
     }
 
@@ -41,9 +36,6 @@ public class Main {
             }
         } catch (Exception e) {
             e.printStackTrace();
-        } finally {
-            System.out.println("Finally: " +numberThread);
-            numberThread--;
         }
     }
 }
