@@ -13,6 +13,7 @@ public class Main {
             String systemSeparator = System.getProperty("file.separator");
             String filePath = System.getProperty("user.home")+systemSeparator+"logfiles"+systemSeparator;
             String fileName = "log_" + UUID.randomUUID() + ".txt";
+            System.out.println(filePath+fileName);
             new File(filePath).mkdir();
             File file = new File(filePath+fileName);
             byte[] bytes = new byte[16 * 1024];
