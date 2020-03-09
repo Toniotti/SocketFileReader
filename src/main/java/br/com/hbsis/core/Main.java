@@ -11,7 +11,7 @@ public class Main {
             while (true) {
                 Socket socket = serverSocket.accept();
                 String fileLocation = "/home/logFiles/log_" + UUID.randomUUID() + ".txt";
-                File file = new File(fileLocation);
+                File file = new File(fileLocation, "UTF-8");
                 file.createNewFile();
                 byte[] bytes = new byte[16 * 1024];
                 try(OutputStream out = new FileOutputStream(file)){
