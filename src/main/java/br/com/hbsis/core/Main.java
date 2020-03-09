@@ -14,8 +14,12 @@ public class Main {
                 File file = new File(fileLocation);
                 file.createNewFile();
                 byte[] bytes = new byte[16 * 1024];
-                try (BufferedWriter bw = new BufferedWriter(new FileWriter(file)); InputStream in = socket.getInputStream()) {
-                    bw.write(new String(bytes));
+                try(OutputStream out = new FileOutputStream(file)){
+                    InputStream in = socket.getInputStream();
+                    int count;
+                    while ((count = in.read(bytes)) > 0) {
+                        out.write(bytes, 0, count);
+                    }
                 } catch (Exception e) {
                     continue;
                 }
