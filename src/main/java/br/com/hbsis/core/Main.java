@@ -1,5 +1,7 @@
 package br.com.hbsis.core;
 
+import org.springframework.beans.factory.annotation.Value;
+
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -8,17 +10,25 @@ import java.util.UUID;
 public class Main {
     private static int numberThread = 0;
 
+    @Value("${server.port:5501}")
+    private static final int serverPort = 0;
+
     public static void main(String[] args) throws IOException {
-        ServerSocket serverSocket = new ServerSocket(5501);
+        ServerSocket serverSocket = new ServerSocket(serverPort);
         while (true) {
-            if(numberThread <= 3){
+            if (numberThread < 5) {
                 Socket socket = serverSocket.accept();
-                new Thread(() -> {faz(socket);}).start();
-            }else{continue;}
+                new Thread(() -> {
+                    numberThread++;
+                    receive(socket);
+                    numberThread--;
+                }).start();
+            }
+            continue;
         }
     }
 
-    private static void faz(Socket socket) {
+    private static void receive(Socket socket) {
         String systemSeparator = System.getProperty("file.separator");
         String filePath = System.getProperty("user.home") + systemSeparator + "logfiles" + systemSeparator;
         String fileName = "log_" + UUID.randomUUID() + ".txt";
