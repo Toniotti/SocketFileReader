@@ -1,5 +1,7 @@
 package br.com.hbsis.core;
 
+import org.apache.commons.io.FileUtils;
+
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -11,9 +13,11 @@ public class Main {
         while (true) {
             Socket socket = serverSocket.accept();
             String systemSeparator = System.getProperty("file.separator");
-            String fileLocation = System.getProperty("user.home")+systemSeparator+"logFiles"+systemSeparator+"log_" + UUID.randomUUID() + ".txt";
-            File file = new File(fileLocation);
-            file.createNewFile();
+            String filePath = System.getProperty("user.home")+systemSeparator+"logfiles"+systemSeparator;
+            String fileName = "log_" + UUID.randomUUID() + ".txt";
+            new File(filePath).mkdir();
+            File file = new File(filePath+fileName);
+            FileUtils.openOutputStream(file);
             byte[] bytes = new byte[16 * 1024];
             try(OutputStream out = new FileOutputStream(file)){
                 InputStream in = socket.getInputStream();
