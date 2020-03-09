@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2853a292-599b-4d6f-8e28-972b1a851f52" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/hbsis/core/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/hbsis/core/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583525208786</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="arrumando o path dos arquivos">
+      <created>1583759307222</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1583759307222</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -177,37 +182,41 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="627" y="262" key="#com.intellij.ide.util.TreeClassChooserDialog/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1583517755758" />
-    <state x="527" y="47" key="CommitChangelistDialog2" timestamp="1583525208075">
+    <state x="527" y="47" key="CommitChangelistDialog2" timestamp="1583759493097">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="527" y="47" key="CommitChangelistDialog2/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1583525208075" />
-    <state width="1865" height="259" key="GridCell.Tab.0.bottom" timestamp="1583759171215">
+    <state x="527" y="47" key="CommitChangelistDialog2/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1583759493097" />
+    <state x="181" y="86" key="DiffContextDialog" timestamp="1583759490654">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="259" key="GridCell.Tab.0.bottom/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1583759171215" />
-    <state width="1865" height="259" key="GridCell.Tab.0.center" timestamp="1583759171215">
+    <state x="181" y="86" key="DiffContextDialog/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1583759490654" />
+    <state width="1865" height="259" key="GridCell.Tab.0.bottom" timestamp="1583759477103">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="259" key="GridCell.Tab.0.center/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1583759171215" />
-    <state width="1865" height="259" key="GridCell.Tab.0.left" timestamp="1583759171215">
+    <state width="1865" height="259" key="GridCell.Tab.0.bottom/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1583759477103" />
+    <state width="1865" height="259" key="GridCell.Tab.0.center" timestamp="1583759477103">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="259" key="GridCell.Tab.0.left/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1583759171215" />
-    <state width="1865" height="259" key="GridCell.Tab.0.right" timestamp="1583759171215">
+    <state width="1865" height="259" key="GridCell.Tab.0.center/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1583759477103" />
+    <state width="1865" height="259" key="GridCell.Tab.0.left" timestamp="1583759477103">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="259" key="GridCell.Tab.0.right/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1583759171215" />
+    <state width="1865" height="259" key="GridCell.Tab.0.left/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1583759477103" />
+    <state width="1865" height="259" key="GridCell.Tab.0.right" timestamp="1583759477103">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1865" height="259" key="GridCell.Tab.0.right/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1583759477103" />
     <state x="377" y="93" key="Maven.ArtifactSearchDialog" timestamp="1583756668354">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="377" y="93" key="Maven.ArtifactSearchDialog/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1583756668354" />
-    <state x="452" y="188" key="Vcs.Push.Dialog.v2" timestamp="1583525224627">
+    <state x="452" y="188" key="Vcs.Push.Dialog.v2" timestamp="1583759496979">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="452" y="188" key="Vcs.Push.Dialog.v2/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1583525224627" />
-    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1583525222662">
+    <state x="452" y="188" key="Vcs.Push.Dialog.v2/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1583759496979" />
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1583759495487">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1583525222662" />
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1583759495487" />
   </component>
 </project>
